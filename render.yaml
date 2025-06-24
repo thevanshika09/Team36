@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: sakhi-backend
+    env: docker
+    rootDir: Sakhi-main/Sakhi_vihaan-main/backend
+    plan: free
+    envVars:
+      # - key: FIREBASE_API_KEY
+      #   value: your_firebase_api_key
+      # - key: ANOTHER_SECRET
+      #   value: your_secret_value
+
+  - type: web
+    name: sakhi-frontend
+    env: docker
+    rootDir: Sakhi-main/Sakhi_vihaan-main
+    plan: free
+    envVars:
+      # - key: NEXT_PUBLIC_API_URL
+      #   value: https://sakhi-backend.onrender.com 
